@@ -1,0 +1,6 @@
+{
+  "local_port": 7000,
+  "server_password": [
+     ["SS_HOST:SS_PORT", "SS_PASSWORD", "aes-256-cfb"]
+  ]
+}
