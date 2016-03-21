@@ -1,11 +1,11 @@
 FROM debian:jessie
 
-RUN echo 'deb http://mirrors.163.com/debian jessie main'>/etc/apt/sources.list
-RUN echo 'deb http://mirrors.163.com/debian jessie-updates main'>>/etc/apt/sources.list
+# RUN echo 'deb http://mirrors.163.com/debian jessie main'>/etc/apt/sources.list
+# RUN echo 'deb http://mirrors.163.com/debian jessie-updates main'>>/etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y supervisor gcc python-pip python-dev curl sudo --no-install-recommends
 
-ADD pip.conf  /etc/pip.conf
+# ADD pip.conf  /etc/pip.conf
 RUN pip install obfsproxy
 
 RUN mkdir -p /etc/shadowsocks
